@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
+  background: rgb(170, 170, 170);
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
@@ -15,30 +15,43 @@ body {
   justify-content: center;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .icon {
-  color: royalblue;
+  color: rgb(65, 105, 225);
   font-size: 26px;
   font-weight: 700;
-  background: lavender;
+  background: rgb(230, 230, 250);
   width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
-  background: #eee;
+  background: rgb(238, 238, 238);
   border-radius: 50%;
-  color: #888;
+  color: rgb(136, 136, 136);
   font-weight: 400;
   font-size: 16px;
   height: 24px;
@@ -46,8 +59,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #eee;
+  border: 1px solid rgb(238, 238, 238);
   padding: 0;
+}
+
+.text {
+  margin-bottom: 10px;
 }
 
 button {
@@ -58,12 +75,21 @@ button {
 
 button.continue {
   background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
+  border: 1px solid rgb(65, 105, 225);
+  color: rgb(255, 255, 255);
+}
+
+button.continue:hover {
+  background: rgb(43, 83, 203);
+  color: rgb(255, 255, 255);
 }
 
 button.cancel {
-  background: white;
-  border: 1px solid #ddd;
-  color: royalblue;
+  background: rgb(246, 246, 246);
+  border: 1px solid rgb(221, 221, 221);
+  color: rgb(65, 105, 225);
+}
+
+button.cancel:hover {
+  background: rgb(189, 189, 189);
 }
